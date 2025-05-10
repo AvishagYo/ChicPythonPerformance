@@ -1,0 +1,8 @@
+# Build both images
+sudo docker build -t perf_regular ./docker_cpython/
+sudo docker build -t perf_pypy ./docker_pypy/
+
+# Run both
+sudo docker run  perf_regular
+sudo docker run  perf_pypy
+
