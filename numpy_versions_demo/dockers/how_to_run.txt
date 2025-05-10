@@ -1,0 +1,8 @@
+# Build
+docker build -t numpy-v1 ./v1
+docker build -t numpy-v2 ./v2
+
+# Run
+docker run --rm numpy-v1
+docker run --rm numpy-v2
+
