@@ -1,0 +1,8 @@
+# Build both images
+docker build -t fib-cpython ./docker_cpython
+docker build -t fib-pypy ./docker_pypy
+
+# Run both
+docker run --rm fib-cpython
+docker run --rm fib-pypy
+
