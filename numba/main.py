@@ -21,7 +21,7 @@ start = time()
 mean_distance_from_zero(arr)
 print("Elapsed CPython: ", time() - start)
 
-for i in range(3):
+for i in range(10):
     start = time()
     mean_distance_from_zero_numba(arr)
     print("Elapsed Numba:   ", time() - start)

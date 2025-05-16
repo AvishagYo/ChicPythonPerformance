@@ -1,0 +1,5 @@
+cProfile	Function-level	General CPU usage	Text
+line_profiler	Line-level	CPU hotspots	Text
+memory_profiler	Line-level	RAM usage issues	Text
+pyinstrument	Call graph	High-level flow profiling	Text or HTML
+yappi	Multi-thread	Async & thread-aware	Text
