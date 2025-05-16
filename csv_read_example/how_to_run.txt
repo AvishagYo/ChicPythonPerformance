@@ -1,0 +1,8 @@
+#https://pythonspeed.com/articles/pandas-read-csv-fast/
+
+FIRST genrate_data.py!!!!
+
+time python default_csv.py
+ time python read_pyarrow.py
+time python conver_to_parquet.py
+time python read_parquet.py
