@@ -1,0 +1,9 @@
+#compile wuth vs command window - X64 see C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Visual Studio 2022\Visual Studio Tools\VC
+cl /LD /O2 /MD mylib.c
+
+#run with 
+python ffi_demo.py
+
+#Python: 0.256130 s, result = 49999995000000
+#C FFI : 0.001641 s, result = 49999995000000
+#Speedup: 156.08x
