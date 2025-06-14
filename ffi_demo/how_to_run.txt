@@ -1,9 +1,11 @@
 #compile wuth vs command window - X64 see C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Visual Studio 2022\Visual Studio Tools\VC
 cl /LD /O2 /MD mylib.c
+cl /LD /O2 /MD mylibbad.c
 
 #run with 
 python ffi_demo.py
 
-#Python: 0.256130 s, result = 49999995000000
-#C FFI : 0.001641 s, result = 49999995000000
-#Speedup: 156.08x
+Python: 0.252865 s, result = 49999995000000
+Bad C FFI : 3.137366 s, result = 49999995000000
+C FFI : 0.002002 s, result = 49999995000000
+Speedup: 126.32x
