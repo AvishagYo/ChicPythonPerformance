@@ -1,0 +1,2 @@
+data taken from https://github.com/plasma-umass/scalene/blob/master/benchmarks/julia1_nopil.py
+python -m scalene demo.py
