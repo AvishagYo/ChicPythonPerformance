@@ -2,6 +2,10 @@
 cl /LD /O2 /MD mylib.c
 cl /LD /O2 /MD mylibbad.c
 
+#for linux
+gcc -O3 -Wall -fPIC -shared mylib.c -o mylib.so
+gcc -O3 -Wall -fPIC -shared mylibadb.c -o mylibbad.so
+
 #run with 
 python ffi_demo.py
 
