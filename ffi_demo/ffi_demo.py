@@ -9,8 +9,10 @@ if platform.system() == "Windows":
     lib = ctypes.CDLL("mylib.dll")
     badlib = ctypes.CDLL("mylibbad.dll")
 else:
-    exit(1)
-
+    #os.add_dll_directory(os.getcwd())
+    lib = ctypes.CDLL("./mylib.so")
+    badlib = ctypes.CDLL("./mylibbad.so")
+    
 # Set up the C function
 lib.sum_range.argtypes = [ctypes.c_int64]
 lib.sum_range.restype = ctypes.c_int64
