@@ -11,7 +11,10 @@ if __name__ == "__main__":
     extractor = BaseExtractor()
 
     # calling parse_url function
-    extractor.parse_url(url)
-
-    # calling pasrse_list function
     extractor.parse_list(array)
+    
+    with open('url_words.txt', 'r') as file:
+        lines = file.readlines()
+
+        # calling pasrse_list function
+        extractor.parse_list(array)
